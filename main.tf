@@ -6,6 +6,6 @@ output "test" {
 
 resource "null_resource" "foo" {
   provisioner "local-exec" {
-    command = "cat /terraform/*.tf ; ls -la /terraform"
+    command = "cat /terraform/zzz_backend_config.tf.json"
   }
 }
